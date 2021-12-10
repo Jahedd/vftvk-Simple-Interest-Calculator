@@ -12,7 +12,41 @@ h1 {
   background-color: white;
   color: black;
   width: 300;
+  height: 500px;
   padding: 20px;
   border-radius: 25px;
   align-self: center;
+}
+#content {
+  margin-left: 50px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  width: 400px;
+  margin: 10px;
+}
+#principal {
+  float: right;
+  width: 200px;
+}
+#range-input {
+  float: right;
+  width: 210px;
+}
+#years {
+  float: right;
+  width: 205px;
+}
+#rate_val {
+  float: right;
+}
+h2 {
+  background-color: yellow;
+  font-size: small;
+  width: auto;
+  float: inline-end;
 }
