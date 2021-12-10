@@ -10,33 +10,47 @@
 <body>
     <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
+        <div id="content">
+            <ul>
+                <li>
+                    <label for="principal">Amount</label>
+                    <input type="text" id="principal">
+                </li>
+                <li>
+                    <label for="rate">Interest Rate</label>
+                    <div id="range-input">
+                        <input type="range" id="rate" min="1" max="20" value="10.25" onchange="updateRate()">
+                        <span id="rate_val">
+                            10.25%
+                        </span>
+                    </div>
 
-        Amount <input type="number" id="principal"> <br />
-        Interest Rate : <input type="range" id="rate" min="1" max="20" value="10.25" onchange="updateRate()">
-        <span id="rate_val">
-            10.25%
-        </span>
-        <br />
-        No. of Years
-        <select id="years">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="0">No Pne of these years</option>
-        </select>
-        <br />
+                </li>
 
-        <button onclick="compute()">Compute Interest</button>
-        <br />
-        <span id="result">
-
-        </span>
+                <li>
+                    <label for="years">No. of Years</label>
+                    <select id="years">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="0">No Pne of these years</option>
+                    </select>
+                </li>
+                <li>
+                    <button onclick="compute()">Compute Interest</button>
+                </li>
+                <li>
+                    <span id="result">
+                    </span>
+                </li>
+            </ul>
+        </div>
         <footer>
             &#169; This Calculator belongs to Javad
         </footer>
